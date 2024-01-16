@@ -1,0 +1,25 @@
+{
+  "name": "vscode-jison",
+  "displayName": "vscode-jison",
+  "description": "Jison syntax highlight",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "jison",
+      "aliases": ["Jison", "jison"],
+      "extensions": [".jison .jisonlex"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "jison",
+      "scopeName": "source.jison",
+      "path": "./syntaxes/jison.tmLanguage.json"
+    }]
+  }
+}
